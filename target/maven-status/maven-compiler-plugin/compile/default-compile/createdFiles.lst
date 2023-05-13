@@ -1,0 +1,8 @@
+controller\Controller.class
+service\ConexaoBancoNuvem.class
+model\UsuarioModel.class
+service\ConexaoBancoLocal.class
+model\LeituraUsuario.class
+model\LeituraModel.class
+controller\Controller$1.class
+model\LeituraComponente.class
