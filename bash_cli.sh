@@ -48,12 +48,12 @@ then
         
         echo "Agora irei instalar a aplicação..."
         sleep 1
-        git clone https://github.com/Grupo1-2ADSB/aplicacao-java/
+        git clone https://github.com/Grupo1-2ADSB/cli-java/
         sleep 1
         echo "Instalação feita com sucesso!"
         echo "Abrindo a aplicação..."
         sleep 2
-        cd aplicacao-java/cli/target
+        cd cli-java/target
         sudo chmod 777  smart-analytic-machine-1.0-SNAPSHOT-jar-with-dependencies.jar
         java -jar smart-analytic-machine-1.0-SNAPSHOT-jar-with-dependencies.jar
         echo "Sucesso!"
