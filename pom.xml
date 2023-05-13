@@ -22,7 +22,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>javaSwing.Login</mainClass> 
+                            <mainClass>cli.Login</mainClass> 
                         </manifest>
                     </archive>
                 </configuration>

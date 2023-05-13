@@ -1,3 +1,4 @@
+cli\Login.class
 controller\Controller.class
 service\ConexaoBancoNuvem.class
 model\UsuarioModel.class
