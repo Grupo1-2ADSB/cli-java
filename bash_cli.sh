@@ -48,7 +48,7 @@ then
         
         echo "Agora irei instalar a aplicação..."
         sleep 1
-        git clone https://github.com/Grupo1-2ADSB/cli-java/
+        git clone https://github.com/Grupo1-2ADSB/cli-java
         sleep 1
         echo "Instalação feita com sucesso!"
         echo "Abrindo a aplicação..."
