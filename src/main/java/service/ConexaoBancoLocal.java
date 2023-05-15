@@ -20,7 +20,7 @@ public class ConexaoBancoLocal {
 
         dataSource​.setDriverClassName("com.mysql.cj.jdbc.Driver");
 
-        dataSource​.setUrl("jdbc:mysql://localhost:3306/sam");
+        dataSource​.setUrl("jdbc:mysql://0.0.0.0:3306/nomebanco?autoReconnect=true&useSSL=false");
         
         dataSource​.setUsername("root");
 
