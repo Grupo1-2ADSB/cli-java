@@ -7,7 +7,6 @@ package cli;
 import controller.Controller;
 import java.util.List;
 import java.util.Scanner;
-import javax.swing.JOptionPane;
 import model.LeituraUsuario;
 import model.UsuarioModel;
 
@@ -31,7 +30,7 @@ public class Login {
 
         /*-------------------------------------------------------------------------*/
         //invocando o método selectDadosUsuario             
-        List<UsuarioModel> listaUsuario = controller.selectDadosUsuario(usuario, senha);
+        List<UsuarioModel> listaUsuario = controller.selectDadosUsuarioLocal(usuario, senha);
         System.out.println(listaUsuario);
 
         //invocando o método selectDadosUsuario             
@@ -48,7 +47,7 @@ public class Login {
         System.out.println(listaLeituraUsuarioNuvem);
 
         /*-----------------------------------------------------------------------------*/
-        if (listaUsuario.isEmpty()) {
+        if (listaUsuario.isEmpty() || listaUsuarioNuvem.isEmpty()) {
 
             System.out.println("Usuário não encontrado");
         } else {
@@ -58,15 +57,6 @@ public class Login {
             controller.inserirNoBanco(listaLeituraUsuario.get(0).getFkConfig(), listaLeituraUsuario.get(0).getFkComponente());
         }
 
-        if (listaUsuarioNuvem.isEmpty()) {
-
-            System.out.println("Usuário não encontrado");
-        } else {
-
-            System.out.println("Bem-vindo de volta, %s!" + usuario);
-
-            controller.inserirNoBanco(listaLeituraUsuarioNuvem.get(0).getFkConfig(), listaLeituraUsuarioNuvem.get(0).getFkComponente());
-        }
     }
 
 }

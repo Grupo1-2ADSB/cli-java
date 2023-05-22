@@ -20,7 +20,11 @@ public class ConexaoBancoLocal {
 
         dataSource​.setDriverClassName("com.mysql.cj.jdbc.Driver");
 
+        //container
         dataSource​.setUrl("jdbc:mysql://172.17.0.2/sam?autoReconnect=true&useSSL=false");
+        
+        //local
+        //dataSource​.setUrl("jdbc:mysql://localhost:3306/sam?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
         
         dataSource​.setUsername("root");
 
