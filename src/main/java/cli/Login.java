@@ -16,8 +16,8 @@ import model.UsuarioModel;
  */
 public class Login {
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws InterruptedException {
+        Thread.sleep(20000);
         Controller controller = new Controller();
 
         Scanner leitor = new Scanner(System.in);
