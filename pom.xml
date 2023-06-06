@@ -84,6 +84,14 @@
             <version>7.4.1.jre8</version>
         </dependency>
         
+        <!-- dependências para o slack -->
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20230227</version>
+        </dependency>
+        
 
         
     </dependencies>

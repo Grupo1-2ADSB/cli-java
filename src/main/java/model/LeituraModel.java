@@ -12,13 +12,12 @@ import java.time.LocalDateTime;
 public class LeituraModel {
 
     private Integer leituraId;
-    private Double leitura;
+    private String leitura;
     private LocalDateTime dataHoraLeitura;
     private Integer configFk;
     private Integer alertaComponenteFk;
 
-    
-    public LeituraModel(Integer leituraId, Double leitura, Integer configFk, Integer alertaComponenteFk) {
+    public LeituraModel(Integer leituraId, String leitura, Integer configFk, Integer alertaComponenteFk) {
         this.leituraId = leituraId;
         this.leitura = leitura;
         this.configFk = configFk;
@@ -37,7 +36,7 @@ public class LeituraModel {
         return leituraId;
     }
 
-    public Double getLeitura() {
+    public String getLeitura() {
         return leitura;
     }
 
@@ -57,7 +56,7 @@ public class LeituraModel {
         this.leituraId = leituraId;
     }
 
-    public void setLeitura(Double leitura) {
+    public void setLeitura(String leitura) {
         this.leitura = leitura;
     }
 
@@ -77,5 +76,4 @@ public class LeituraModel {
                 + "\nconfigFk=" + configFk
                 + "\nalertaComponenteFk:" + alertaComponenteFk;
     }
-
 }

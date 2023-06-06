@@ -47,14 +47,14 @@ public class Login {
         System.out.println(listaLeituraUsuarioNuvem);
 
         /*-----------------------------------------------------------------------------*/
-        if (listaUsuario.isEmpty() || listaUsuarioNuvem.isEmpty()) {
+        if (listaUsuario.isEmpty() && listaUsuarioNuvem.isEmpty()) {
 
             System.out.println("Usuário não encontrado");
         } else {
 
             System.out.println("Bem-vindo de volta, %s!" + usuario);
 
-            controller.inserirNoBanco(listaLeituraUsuario.get(0).getFkConfig(), listaLeituraUsuario.get(0).getFkComponente());
+            controller.inserirNoBanco();
         }
 
     }

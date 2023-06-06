@@ -31,11 +31,9 @@ public class UsuarioModel {
     }
 
     public UsuarioModel() {
+        
     }
     
-    
-
-
     public String getNomeUsuario() {
         return nomeUsuario;
     }
@@ -100,8 +98,6 @@ public class UsuarioModel {
         this.fkPermissao = fkPermissao;
     }
     
-    
-    
     @Override
     public String toString() {
         return String.format
@@ -116,7 +112,4 @@ public class UsuarioModel {
           statusUsuario, fkEmpresa, fkPermissao);
                
     }
-
-   
-
 }

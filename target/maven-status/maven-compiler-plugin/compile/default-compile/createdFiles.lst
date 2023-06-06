@@ -1,8 +1,11 @@
+model\MaquinaUnidade.class
 cli\Login.class
 controller\Controller.class
 service\ConexaoBancoNuvem.class
 model\UsuarioModel.class
+slack\App.class
 service\ConexaoBancoLocal.class
 model\LeituraUsuario.class
+slack\Slack.class
 model\LeituraModel.class
 controller\Controller$1.class

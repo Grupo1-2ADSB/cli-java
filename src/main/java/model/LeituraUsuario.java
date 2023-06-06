@@ -28,8 +28,6 @@ public class LeituraUsuario {
         this.nomeUsuario = nomeUsuario;
     }
     
-    
-
     public LeituraUsuario() {
     }
 
@@ -41,9 +39,6 @@ public class LeituraUsuario {
         this.idLeitura = idLeitura;
     }
 
-    
-    
-    
     public Integer getFkConfig() {
         return fkConfig;
     }
@@ -100,9 +95,4 @@ public class LeituraUsuario {
                 + "\n, fkMaquina: " + fkMaquina + ", fkComponente: " + fkComponente + 
                 "\n, nSerie: " + nSerie + ", nomeUsuario: " + nomeUsuario + "\n";
     }
-
-    
-    
-    
-    
 }
