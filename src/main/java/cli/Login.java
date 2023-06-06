@@ -29,23 +29,25 @@ public class Login {
         String senha = leitor.nextLine();
 
         /*-------------------------------------------------------------------------*/
-        //invocando o método selectDadosUsuario             
+        /*-------------------------------------------------------------------------*/
+        //invocando o método selectDadosUsuario
         List<UsuarioModel> listaUsuario = controller.selectDadosUsuarioLocal(usuario, senha);
         System.out.println(listaUsuario);
-
+        
         //invocando o método selectDadosUsuario             
         List<UsuarioModel> listaUsuarioNuvem = controller.selectDadosUsuarioNuvem(usuario, senha);
         System.out.println(listaUsuarioNuvem);
 
         /*-------------------------------------------------------------------------*/
+        
         //invocando o método selectLeituraUsuario
         List<LeituraUsuario> listaLeituraUsuario = controller.selectLeituraUsuario(usuario, senha);
         System.out.println(listaLeituraUsuario);
-
+        
         //invocando o método selectLeituraUsuarioNuvem
         List<LeituraUsuario> listaLeituraUsuarioNuvem = controller.selectLeituraUsuarioNuvem(usuario, senha);
         System.out.println(listaLeituraUsuarioNuvem);
-
+        
         /*-----------------------------------------------------------------------------*/
         if (listaUsuario.isEmpty() && listaUsuarioNuvem.isEmpty()) {
 
