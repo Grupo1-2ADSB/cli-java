@@ -126,7 +126,7 @@ public class Controller {
     //Inserção de leituras - Local
     public void insertTbLeituraLocal(Integer fkConfig, Integer fkAlertaComponente) {
 
-        conLocal.update("insert into tbLeitura(idLeitura ,leitura, dataHoraLeitura , fkConfig, fkAlertaComponente values (? ,? , ?, ?, ?)",
+        conLocal.update("insert into tbLeitura(idLeitura ,leitura, dataHoraLeitura , fkConfig, fkAlertaComponente) values (? ,? , ?, ?, ?)",
                 null, leituraModel.getLeitura(), leituraModel.getDataHoraLeitura(),
                 fkConfig, fkAlertaComponente);
     }
